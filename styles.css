@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-bar {
+    background-color: #008080;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.product-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.product-bar a:hover {
+    background-color: #004d4d;
+    color: #ffe082;
+}
+
+.hidden {
+    display: none;
+}
+
+.hero {
+    background-color: #e0f7fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    color: #008080;
+}
+
+.catalogo {
+    padding: 20px;
+}
+
+.catalogo h2 {
+    text-align: center;
+    color: #008080;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery-item {
+    text-align: center;
+    position: relative;
+}
+
+.gallery img {
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+
+.gallery img:hover {
+    transform: scale(1.5);
+    z-index: 2;
+}
+
+.gallery p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.cta {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #008080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ffe082;
+    text-decoration: none;
+}
