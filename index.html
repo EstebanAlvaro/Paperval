@@ -1,17 +1,3 @@
-Voy a proceder con los siguientes pasos para corregir los problemas mencionados en el archivo `index.html` y crear un nuevo archivo `styles.css`.
-
-### Paso 1: Obtener y analizar el contenido del HTML y CSS
-- Revisar el archivo `index.html` para entender la estructura actual.
-- Crear el archivo `styles.css` y ajustar los estilos necesarios.
-
-### Paso 2: Implementar las correcciones
-- Centrar el logo en dispositivos móviles.
-- Rediseñar la barra de productos para que se vea bien tanto en dispositivos móviles como en la web.
-- Corregir la alineación del número de contacto de WhatsApp en la vista móvil.
-
-### Contenido actualizado del archivo `index.html`:
-
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -25,13 +11,13 @@ Voy a proceder con los siguientes pasos para corregir los problemas mencionados 
         <img src="img/logo paperval.jpg" alt="Logo de Paperval">
     </header>
 
-    <nav>
-        <a onclick="showSection('bobinas-kraft')">Productos - Bobinas Kraft color y fondo dorado</a>
-        <a onclick="showSection('bobinas-kraft con Diseño')">Productos - Bobinas Kraft con diseño</a>
-        <a onclick="showSection('bobinas-satinadas')">Productos - Bobinas Satinadas</a>
-        <a onclick="showSection('fundas')">Productos - Fundas de 20 hojas</a>
-        <a onclick="showSection('monitas-regalo')">Productos - Moñitas de Regalo</a>
-        <a onclick="showSection('bolsas-kraft')">Productos - Bolsas Kraft con Diseño</a>
+    <nav class="product-bar">
+        <a onclick="showSection('bobinas-kraft')">Bobinas Kraft color y fondo dorado</a>
+        <a onclick="showSection('bobinas-kraft-con-diseno')">Bobinas Kraft con diseño</a>
+        <a onclick="showSection('bobinas-satinadas')">Bobinas Satinadas</a>
+        <a onclick="showSection('fundas')">Fundas de 20 hojas</a>
+        <a onclick="showSection('monitas-regalo')">Moñitas de Regalo</a>
+        <a onclick="showSection('bolsas-kraft')">Bolsas Kraft con Diseño</a>
     </nav>
 
     <section class="hero" id="inicio">
@@ -70,7 +56,7 @@ Voy a proceder con los siguientes pasos para corregir los problemas mencionados 
         </div>
     </section>
 
-    <section class="catalogo hidden" id="bobinas-kraft con Diseño">
+    <section class="catalogo hidden" id="bobinas-kraft-con-diseno">
         <h2>Bobinas Kraft Naturales con Diseño <p>El precio de cada bobina con fondo dorado es de $ 2.665</p>
         </h2>
 
@@ -96,136 +82,6 @@ Voy a proceder con los siguientes pasos para corregir los problemas mencionados 
 
     <section class="catalogo hidden" id="bobinas-satinadas">
         <h2>Bobinas Satinadas<p>El precio de cada bobina con diseño es de $ 4.186</p> </h2>
-        <div class="gallery">
-            <div class="gallery-item">
-                <img src="img/111.jpg" alt="Funda 1">
-                <p>Ref: 111 </p>
-            </div>
-            <div class="gallery-item">
-                <img src="img/112.jpg" alt="Funda 2">
-                <p>Ref: 112 </p>
-            </div>
-            <div class="gallery-item">
-                <img src="img/114 - copia.jpg" alt="Funda 3">
-                <p>Ref: 114 </p>
-            </div>
-            <div class="gallery-item">
-                <img src="img/116 - copia.jpg" alt="Funda 4">
-                <p>Ref: 116 </p>
-            </div>    
-            <div class="gallery-item">
-                <img src="img/119.jpg" alt="Funda 5">
-                <p>Ref: 119 </p>
-            </div>
-            <div class="gallery-item">
-                <img src="img/120.jpg" alt="Funda 6">
-                <p>Ref: 120 </p>
-            </div>
-            <div class="gallery-item">
-                <img src="img/121.jpg" alt="Funda 7">
-                <p>Ref: 121 </p>
-            </div>
-            <div class="gallery-item">
-                <img src="img/123.jpg" alt="Funda 8">
-                <p>Ref: 123 </p>
-            </div>
-            <div class="gallery-item">
-                <img src="img/124.jpg" alt="Funda 9">
-                <p>Ref: 124 </p>   
-            </div>
-            <div class="gallery-item">
-                <img src="img/125.jpg" alt="Funda 10">
-                <p>Ref: 125 </p>
-            </div>
-            <div class="gallery-item">
-                <img src="img/129.jpg" alt="Funda 11">
-                <p>Ref: 129 </p>   
-            </div>
-            <div class="gallery-item">
-                <img src="img/134.jpg" alt="Funda 12">
-                <p>Ref: 134 </p>   
-            </div>
-            <div class="gallery-item">
-                <img src="img/135.jpg" alt="Funda 13">
-                <p>Ref: 135 </p>   
-            </div>
-            <div class="gallery-item">
-                <img src="img/136.jpg" alt="Funda 14">
-                <p>Ref: 136 </p>   
-            </div>
-            <div class="gallery-item">
-                <img src="img/140.jpg" alt="Funda 15">
-                <p>Ref: 140 </p>   
-            </div>   
-            <div class="gallery-item">
-                <img src="img/141.jpg" alt="Funda 16">
-                <p>Ref: 141 </p>   
-            </div>
-            <div class="gallery-item">
-                <img src="img/154.jpg" alt="Funda 17">
-                <p>Ref: 154 </p>   
-            </div>
-            <div class="gallery-item">
-                <img src="img/157.jpg" alt="Funda 18">
-                <p>Ref: 157 </p>   
-            </div>
-            <div class="gallery-item">
-                <img src="img/159.jpg" alt="Funda 19">
-                <p>Ref: 159 </p>   
-            </div>
-            <div class="gallery-item">
-                <img src="img/205.jpg" alt="Funda 20">
-                <p>Ref: 205 </p>   
-            </div>
-            <div class="gallery-item">
-                <img src="img/203.jpg" alt="Funda 21">
-                <p>Ref: 203 </p>   
-            </div>            
-            <div class="gallery-item">
-                <img src="img/207.jpg" alt="Funda 22">
-                <p>Ref: 207 </p>   
-            </div>
-            <div class="gallery-item">
-                <img src="img/214.jpg" alt="Funda 23">
-                <p>Ref: 214 </p>   
-            </div>            
-            <div class="gallery-item">
-                <img src="img/218.jpg" alt="Funda 24">
-                <p>Ref: 218 </p>   
-            </div>
-            <div class="gallery-item">
-                <img src="img/235.jpg" alt="Funda 25">
-                <p>Ref: 235 </p>   
-            </div>  
-            <div class="gallery-item">
-                <img src="img/239.jpg" alt="Funda 26">
-                <p>Ref: 239 </p>   
-            </div>
-            <div class="gallery-item">
-                <img src="img/262.jpg" alt="Funda 27">
-                <p>Ref: 262 </p>   
-            </div>
-            <div class="gallery-item">
-                <img src="img/312.jpg" alt="Funda 28">
-                <p>Ref: 312 </p>   
-            </div>
-            <div class="gallery-item">
-                <img src="img/317.jpg" alt="Funda 29">
-                <p>Ref: 317 </p>   
-            </div>
-            <div class="gallery-item">
-                <img src="img/318.jpg" alt="Funda 30">
-                <p>Ref: 318 </p>   
-            </div>
-            <div class="gallery-item">
-                <img src="img/321.jpg" alt="Funda 31">
-                <p>Ref: 321 </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="catalogo hidden" id="fundas">
-        <h2>Fundas de 20 hojas Mismo Diseño tamaño de cada hoja 60 cm por 70 cm <p>El precio de cada funda es de de $ 535</p></h2>
         <div class="gallery">
             <div class="gallery-item">
                 <img src="img/111.jpg" alt="Funda 1">
@@ -381,7 +237,7 @@ Voy a proceder con los siguientes pasos para corregir los problemas mencionados 
             if (targetSection) {
                 targetSection.classList.remove('hidden');
             } else {
-            console.error(`No se encontró la sección con ID: ${sectionId}`);
+                console.error(`No se encontró la sección con ID: ${sectionId}`);
             }
         }
     </script>
