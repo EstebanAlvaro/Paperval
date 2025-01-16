@@ -22,35 +22,32 @@
 
     <section class="hero" id="inicio">
         <h1>Bienvenidos a Paperval</h1>
-        <p> En Paperval, somos especialistas en ofrecer soluciones innovadoras y de alta calidad para el embalaje y la presentación de regalos.
+        <p>En Paperval, somos especialistas en ofrecer soluciones innovadoras y de alta calidad para el embalaje y la presentación de regalos.
             Nos dedicamos a la venta de papel de regalo en distintos formatos y acabados, diseñados para realzar cada ocasión especial.
-
             Nuestra línea de productos incluye:
-            
             Bobinas satinadas de papel de regalo en tamaño 60 cm x 200 m, perfectas para uso comercial o grandes eventos.
             Fundas de papel con el mismo diseño, en tamaño 60 cm x 70 cm, ideales para envolver con estilo y practicidad.
-            Bobinas de papel kraft de 50 cm, disponibles en diseños decorativos, lisos y opciones de color con fondo dorado, 
+            Bobinas de papel kraft de 50 cm, disponibles en diseños decorativos, lisos y opciones de color con fondo dorado,
             brindando una alternativa elegante y versátil.
             En Paperval, combinamos calidad, variedad y creatividad para satisfacer las necesidades de nuestros clientes,
             tanto para el sector empresarial como para los amantes de los detalles únicos. Nuestro objetivo es ser la elección preferida para envolver momentos especiales,
             con productos que se destacan por su diseño y funcionalidad.
-            
-            ¡Descubre cómo podemos agregar un toque especial a tus regalos! </p>
-    </section>
+            ¡Descubre cómo podemos agregar un toque especial a tus regalos!</p>
+   </section>
 
     <section class="catalogo hidden" id="bobinas-kraft">
         <h2>Bobinas Kraft Con Fondo Dorado <p>El precio de cada bobina con fondo dorado es de $ 4.240</p> </h2>
         <div class="gallery">
             <div class="gallery-item">
-                <img src="img/kraft 1.jpg">
+                <img src="img/kraft 1.jpg" alt="Bobina Kraft 1">
                 <p>Bobina Kraft ancho 50 cm color con fondo dorado</p>
             </div>
             <div class="gallery-item">
-                <img src="img/kraft 2.jpg">
+                <img src="img/kraft 2.jpg" alt="Bobina Kraft 2">
                 <p>Bobina Kraft ancho 50 cm color con fondo dorado</p>
             </div>
             <div class="gallery-item">
-                <img src="img/Kraft 3.jpg">
+                <img src="img/kraft 3.jpg" alt="Bobina Kraft 3">
                 <p>Bobina Kraft ancho 50 cm color con fondo dorado</p>
             </div>
         </div>
@@ -352,15 +349,15 @@
     <section class="cta" id="contacto">
         <h2>Contacto</h2>
         <p>Teléfono: +598 9358 8349</p>
-        <p>Email: <a href="mailto: ventasaavtc@gmail.com">ventasaavtc@gmail.com</a></p>
+        <p>Email: <a href="mailto:ventasaavtc@gmail.com">ventasaavtc@gmail.com</a></p>
         <p>Síguenos en: <a href="https://instagram.com/paperval_">Instagram</a> | <a href="https://facebook.com/Valpaper">Facebook</a></p>
     </section>
 
- <footer>
+    <footer>
         <p>&copy; 2024 Paperval. Todos los derechos reservados.</p>
-        <!-- Contador de visitas -->
         <div>
-            <a href="https://www.freevisitorcounters.com/en/home/stats/id/123456"><img src="https://www.freevisitorcounters.com/en/home/counter/123456/t/5" border="0" alt="Contador de Visitas"></a>        </div>
+            <a href="https://www.freevisitorcounters.com/en/home/stats/id/123456"><img src="https://www.freevisitorcounters.com/en/home/counter/123456/t/5" border="0" alt="Contador de Visitas"></a>
+        </div>
     </footer>
 
     <script>
@@ -368,7 +365,6 @@
             const sections = document.querySelectorAll('.catalogo');
             sections.forEach(section => section.classList.add('hidden'));
 
-            // Verifica si el elemento existe antes de quitar la clase
             const targetSection = document.getElementById(sectionId);
             if (targetSection) {
                 targetSection.classList.remove('hidden');
@@ -376,17 +372,6 @@
                 console.error(`No se encontró la sección con ID: ${sectionId}`);
             }
         }
-    </script>
-
-    <!-- Código de seguimiento de Statcounter -->
-    <script type="text/javascript">
-        var sc_project=12345678; 
-        var sc_invisible=0; 
-        var sc_security="abc123"; 
-        var scJsHost = (("https:" == document.location.protocol) ?
-        "https://secure." : "http://www.");
-        document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
-        "statcounter.com/counter/counter.js'></"+"script>");
     </script>
 </body>
 </html>
