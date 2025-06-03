@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paperval - Papel de Regalo</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Asegúrate de tener esto en tu CSS */
+        .hidden {
+            display: none !important;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,6 +26,7 @@
         <a href="#" onclick="showSection('bolsas-kraft');return false;">Bolsas Kraft con Diseño</a>
     </nav>
 
+    <!-- Solo la sección HERO visible al inicio -->
     <section class="hero" id="inicio">
         <h1>Bienvenidos a Paperval</h1>
         <p>En Paperval, somos especialistas en ofrecer soluciones innovadoras y de alta calidad para el embalaje y la presentación de regalos.
@@ -35,7 +42,7 @@
             ¡Descubre cómo podemos agregar un toque especial a tus regalos!</p>
    </section>
 
-    <!-- === SECCIONES DE CATÁLOGO (TODAS INICIAN OCULTAS) === -->
+    <!-- TODAS LAS DEMÁS SECCIONES OCULTAS AL INICIO -->
     <section class="catalogo hidden" id="bobinas-kraft">
         <h2>Bobinas Kraft Con Fondo Dorado <p>El precio de cada bobina con fondo dorado es de $ 4.240</p> </h2>
         <div class="gallery">
@@ -53,7 +60,6 @@
             </div>
         </div>
     </section>
-
     <section class="catalogo hidden" id="bobinas-kraft-con-diseno">
         <h2>Bobinas Kraft Naturales con Diseño <p>El precio de cada bobina con fondo dorado es de $ 2.665</p></h2>
         <div class="gallery">
@@ -75,26 +81,22 @@
             </div>
         </div>
     </section>
-
     <section class="catalogo hidden" id="bobinas-satinadas">
         <h2>Bobinas Satinadas<p>El precio de cada bobina con diseño es de $ 4.186</p></h2>
         <div class="gallery">
             <div class="gallery-item"><img src="img/111.jpg" alt="Satinada 111"><p>Ref: 111</p></div>
             <div class="gallery-item"><img src="img/112.jpg" alt="Satinada 112"><p>Ref: 112</p></div>
-            <!-- ... todas las imágenes como las tienes ... -->
+            <!-- ... todas las imágenes ... -->
         </div>
-        <!-- ENLACE A LA CARPETA IMG ELIMINADO -->
     </section>
-
     <section class="catalogo hidden" id="fundas">
         <h2>Fundas de 20 hojas Mismo Diseño tamaño de cada hoja 60 cm por 70 cm <p>El precio de cada funda es de $ 535</p></h2>
         <div class="gallery">
             <div class="gallery-item"><img src="img/111.jpg" alt="Funda 1"><p>Ref: 111</p></div>
             <div class="gallery-item"><img src="img/112.jpg" alt="Funda 2"><p>Ref: 112</p></div>
-            <!-- ... todas las imágenes como las tienes ... -->
+            <!-- ... todas las imágenes ... -->
         </div>
     </section>
-
     <section class="catalogo hidden" id="monitas-regalo">
         <h2>Moñitas de Regalo</h2>
         <div class="gallery">
@@ -112,7 +114,7 @@
             </div>
         </div>
     </section>
-    <!-- ... Puedes seguir con otras secciones de catálogo igual ... -->
+    <!-- ...más secciones si tienes... -->
 
     <section class="cta" id="comprar">
         <h2>¿Cómo Comprar?</h2>
@@ -127,7 +129,6 @@
         </p>
         <p>3. Realiza el pago por Mercado Pago a través de nuestro QR o enlace.</p>
     </section>
-
     <section class="cta" id="contacto">
         <h2>Contacto</h2>
         <div class="contacto-celular">
@@ -141,11 +142,9 @@
     </section>
 
     <div id="contador-visitas" style="text-align:center;font-size:16px;margin:10px;"></div>
-
     <footer>
         <p>&copy; 2024 Paperval. Todos los derechos reservados.</p>
     </footer>
-
     <script>
         function showSection(sectionId) {
             document.querySelectorAll('.catalogo').forEach(section => section.classList.add('hidden'));
@@ -161,7 +160,7 @@
             document.querySelectorAll('.catalogo').forEach(section => section.classList.add('hidden'));
             document.querySelector('.hero').classList.remove('hidden');
         }
-        // Analítica local: visitas, tiempo, clicks, vistas
+        // Analítica local...
         (function() {
             let visitas = localStorage.getItem('visitasPaperval') || 0;
             visitas++;
@@ -189,7 +188,6 @@
                     localStorage.setItem('articulosPaperval', JSON.stringify(clicks));
                 }
             });
-
             window.addEventListener('scroll', function() {
                 document.querySelectorAll('.gallery-item').forEach(function(item) {
                     let rect = item.getBoundingClientRect();
