@@ -178,3 +178,8 @@ footer a {
     height: 28px;
     display: inline-block;
 }
+
+/* ¡Esta línea es clave! */
+.hidden {
+    display: none !important;
+}
