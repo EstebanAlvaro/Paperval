@@ -218,3 +218,43 @@ img {
     margin: 0 auto;
   }
 }
+.logo-paperval {
+  display: block;
+  margin: 0 auto 12px auto;
+  max-width: 200px;
+  height: auto;
+}
+.metodos-pago {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+
+.metodos-pago img {
+  max-width: 120px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: white;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+@media (max-width: 700px) {
+  .metodos-pago {
+    gap: 12px;
+  }
+  .metodos-pago img {
+    max-width: 85px;
+    padding: 4px;
+  }
+}
+@media (max-width: 450px) {
+  .metodos-pago img {
+    max-width: 70px;
+  }
+}
