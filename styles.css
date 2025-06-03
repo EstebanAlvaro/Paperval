@@ -11,6 +11,13 @@ header {
     text-align: center;
 }
 
+.logo-paperval {
+    display: block;
+    margin: 0 auto 12px auto;
+    max-width: 200px;
+    height: auto;
+}
+
 header img {
     max-width: 100%;
     height: auto;
@@ -179,82 +186,60 @@ footer a {
     display: inline-block;
 }
 
-/* ¡Esta línea es clave! */
 .hidden {
     display: none !important;
 }
+
+/* LOGOS MÉTODOS DE PAGO - SOLO DEJA ESTE BLOQUE */
 .metodos-pago {
     display: flex;
     justify-content: center;
-    gap: 16px;
-    margin: 10px 0;
     align-items: center;
-}
-
-.logo-pago {
-    height: 36px;
-    width: auto;
-    background: #fff;
-    border-radius: 6px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
-    padding: 3px 6px;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.bancos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-}
-
-@media (max-width: 600px) {
-  .bancos img {
-    max-width: 120px;
-    margin: 0 auto;
-  }
-}
-.logo-paperval {
-  display: block;
-  margin: 0 auto 12px auto;
-  max-width: 200px;
-  height: auto;
-}
-.metodos-pago {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  flex-wrap: wrap;
-  margin: 16px 0;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 16px 0;
 }
 
 .metodos-pago img {
-  max-width: 120px;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  background: white;
-  padding: 8px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    max-width: 100px;
+    width: 90px;
+    height: auto;
+    object-fit: contain;
+    background: white;
+    padding: 6px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: transform 0.2s;
 }
 
-@media (max-width: 700px) {
-  .metodos-pago {
-    gap: 12px;
-  }
-  .metodos-pago img {
-    max-width: 85px;
-    padding: 4px;
-  }
+@media (max-width: 600px) {
+    .metodos-pago {
+        gap: 10px;
+    }
+    .metodos-pago img {
+        max-width: 70px;
+        width: 60px;
+        padding: 4px;
+    }
 }
-@media (max-width: 450px) {
-  .metodos-pago img {
-    max-width: 70px;
-  }
+
+/* REGLA GENERAL PARA TODAS LAS IMÁGENES */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Si tienes logos de bancos en otro bloque, puedes dejar esto si lo usas. Sino, lo puedes borrar */
+.bancos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+@media (max-width: 600px) {
+    .bancos img {
+        max-width: 120px;
+        margin: 0 auto;
+    }
 }
