@@ -11,12 +11,13 @@
         <img src="img/logo paperval.jpg" alt="Logo de Paperval">
     </header>
     <nav class="product-bar">
-        <a href="#" onclick="showSection('bobinas-kraft')">Bobinas Kraft color y fondo dorado</a>
-        <a href="#" onclick="showSection('bobinas-kraft-con-diseno')">Bobinas Kraft con diseño</a>
-        <a href="#" onclick="showSection('bobinas-satinadas')">Bobinas Satinadas</a>
-        <a href="#" onclick="showSection('fundas')">Fundas de 20 hojas</a>
-        <a href="#" onclick="showSection('monitas-regalo')">Moñitas de Regalo</a>
-        <a href="#" onclick="showSection('bolsas-kraft')">Bolsas Kraft con Diseño</a>
+        <a href="#" onclick="showHero();return false;">Inicio</a>
+        <a href="#" onclick="showSection('bobinas-kraft');return false;">Bobinas Kraft color y fondo dorado</a>
+        <a href="#" onclick="showSection('bobinas-kraft-con-diseno');return false;">Bobinas Kraft con diseño</a>
+        <a href="#" onclick="showSection('bobinas-satinadas');return false;">Bobinas Satinadas</a>
+        <a href="#" onclick="showSection('fundas');return false;">Fundas de 20 hojas</a>
+        <a href="#" onclick="showSection('monitas-regalo');return false;">Moñitas de Regalo</a>
+        <a href="#" onclick="showSection('bolsas-kraft');return false;">Bolsas Kraft con Diseño</a>
     </nav>
 
     <section class="hero" id="inicio">
@@ -34,8 +35,7 @@
             ¡Descubre cómo podemos agregar un toque especial a tus regalos!</p>
    </section>
 
-    <!-- === SECCIONES DE CATÁLOGO (TUS IMÁGENES ORIGINALES) === -->
-    <!-- Bobinas Kraft Con Fondo Dorado -->
+    <!-- === SECCIONES DE CATÁLOGO (TODAS INICIAN OCULTAS) === -->
     <section class="catalogo hidden" id="bobinas-kraft">
         <h2>Bobinas Kraft Con Fondo Dorado <p>El precio de cada bobina con fondo dorado es de $ 4.240</p> </h2>
         <div class="gallery">
@@ -54,7 +54,6 @@
         </div>
     </section>
 
-    <!-- Bobinas Kraft Naturales con Diseño -->
     <section class="catalogo hidden" id="bobinas-kraft-con-diseno">
         <h2>Bobinas Kraft Naturales con Diseño <p>El precio de cada bobina con fondo dorado es de $ 2.665</p></h2>
         <div class="gallery">
@@ -77,7 +76,6 @@
         </div>
     </section>
 
-    <!-- Bobinas Satinadas -->
     <section class="catalogo hidden" id="bobinas-satinadas">
         <h2>Bobinas Satinadas<p>El precio de cada bobina con diseño es de $ 4.186</p></h2>
         <div class="gallery">
@@ -87,24 +85,77 @@
             <div class="gallery-item"><img src="img/116 - copia.jpg" alt="Satinada 116"><p>Ref: 116</p></div>
             <div class="gallery-item"><img src="img/118.jpg" alt="Satinada 118"><p>Ref: 118</p></div>
             <div class="gallery-item"><img src="img/119.jpg" alt="Satinada 119"><p>Ref: 119</p></div>
-            <!-- ... sigue con todas tus imágenes originales ... -->
+            <div class="gallery-item"><img src="img/120.jpg" alt="Satinada 120"><p>Ref: 120</p></div>
+            <div class="gallery-item"><img src="img/121.jpg" alt="Satinada 121"><p>Ref: 121</p></div>
+            <div class="gallery-item"><img src="img/123.jpg" alt="Satinada 123"><p>Ref: 123</p></div>
+            <div class="gallery-item"><img src="img/124.jpg" alt="Satinada 124"><p>Ref: 124</p></div>
+            <div class="gallery-item"><img src="img/125.jpg" alt="Satinada 125"><p>Ref: 125</p></div>
+            <div class="gallery-item"><img src="img/129.jpg" alt="Satinada 129"><p>Ref: 129</p></div>
+            <div class="gallery-item"><img src="img/134.jpg" alt="Satinada 134"><p>Ref: 134</p></div>
+            <div class="gallery-item"><img src="img/135.jpg" alt="Satinada 135"><p>Ref: 135</p></div>
+            <div class="gallery-item"><img src="img/136.jpg" alt="Satinada 136"><p>Ref: 136</p></div>
+            <div class="gallery-item"><img src="img/140.jpg" alt="Satinada 140"><p>Ref: 140</p></div>
+            <div class="gallery-item"><img src="img/141.jpg" alt="Satinada 141"><p>Ref: 141</p></div>
+            <div class="gallery-item"><img src="img/154.jpg" alt="Satinada 154"><p>Ref: 154</p></div>
+            <div class="gallery-item"><img src="img/157.jpg" alt="Satinada 157"><p>Ref: 157</p></div>
+            <div class="gallery-item"><img src="img/159.jpg" alt="Satinada 159"><p>Ref: 159</p></div>
+            <div class="gallery-item"><img src="img/195.jpg" alt="Satinada 195"><p>Ref: 195</p></div>
+            <div class="gallery-item"><img src="img/196.jpg" alt="Satinada 196"><p>Ref: 196</p></div>
+            <div class="gallery-item"><img src="img/199.jpg" alt="Satinada 199"><p>Ref: 199</p></div>
+            <div class="gallery-item"><img src="img/203.jpg" alt="Satinada 203"><p>Ref: 203</p></div>
+            <div class="gallery-item"><img src="img/205.jpg" alt="Satinada 205"><p>Ref: 205</p></div>
+            <div class="gallery-item"><img src="img/207.jpg" alt="Satinada 207"><p>Ref: 207</p></div>
+            <div class="gallery-item"><img src="img/212.jpg" alt="Satinada 212"><p>Ref: 212</p></div>
+            <div class="gallery-item"><img src="img/213.jpg" alt="Satinada 213"><p>Ref: 213</p></div>
+            <div class="gallery-item"><img src="img/214.jpg" alt="Satinada 214"><p>Ref: 214</p></div>
+            <div class="gallery-item"><img src="img/218.jpg" alt="Satinada 218"><p>Ref: 218</p></div>
+            <div class="gallery-item"><img src="img/218 r.jpg" alt="Satinada 218 r"><p>Ref: 218 r</p></div>
+            <div class="gallery-item"><img src="img/220.jpg" alt="Satinada 220"><p>Ref: 220</p></div>
+            <div class="gallery-item"><img src="img/222.jpg" alt="Satinada 222"><p>Ref: 222</p></div>
+            <div class="gallery-item"><img src="img/224.jpg" alt="Satinada 224"><p>Ref: 224</p></div>
+            <div class="gallery-item"><img src="img/226.jpg" alt="Satinada 226"><p>Ref: 226</p></div>
+            <div class="gallery-item"><img src="img/230.jpg" alt="Satinada 230"><p>Ref: 230</p></div>
+            <div class="gallery-item"><img src="img/232.jpg" alt="Satinada 232"><p>Ref: 232</p></div>
+            <div class="gallery-item"><img src="img/233.jpg" alt="Satinada 233"><p>Ref: 233</p></div>
+            <div class="gallery-item"><img src="img/235.jpg" alt="Satinada 235"><p>Ref: 235</p></div>
+            <div class="gallery-item"><img src="img/237.jpg" alt="Satinada 237"><p>Ref: 237</p></div>
+            <div class="gallery-item"><img src="img/239.jpg" alt="Satinada 239"><p>Ref: 239</p></div>
+            <div class="gallery-item"><img src="img/241.jpg" alt="Satinada 241"><p>Ref: 241</p></div>
+            <div class="gallery-item"><img src="img/242.jpg" alt="Satinada 242"><p>Ref: 242</p></div>
+            <div class="gallery-item"><img src="img/248.jpg" alt="Satinada 248"><p>Ref: 248</p></div>
+            <div class="gallery-item"><img src="img/262.jpg" alt="Satinada 262"><p>Ref: 262</p></div>
+            <div class="gallery-item"><img src="img/305.jpg" alt="Satinada 305"><p>Ref: 305</p></div>
+            <div class="gallery-item"><img src="img/312.jpg" alt="Satinada 312"><p>Ref: 312</p></div>
+            <div class="gallery-item"><img src="img/313.jpg" alt="Satinada 313"><p>Ref: 313</p></div>
+            <div class="gallery-item"><img src="img/314.jpg" alt="Satinada 314"><p>Ref: 314</p></div>
+            <div class="gallery-item"><img src="img/317.jpg" alt="Satinada 317"><p>Ref: 317</p></div>
+            <div class="gallery-item"><img src="img/318.jpg" alt="Satinada 318"><p>Ref: 318</p></div>
+            <div class="gallery-item"><img src="img/320.jpg" alt="Satinada 320"><p>Ref: 320</p></div>
+            <div class="gallery-item"><img src="img/321.jpg" alt="Satinada 321"><p>Ref: 321</p></div>
+            <div class="gallery-item"><img src="img/328.jpg" alt="Satinada 328"><p>Ref: 328</p></div>
+            <div class="gallery-item"><img src="img/335.jpg" alt="Satinada 335"><p>Ref: 335</p></div>
+            <div class="gallery-item"><img src="img/344.jpg" alt="Satinada 344"><p>Ref: 344</p></div>
+            <div class="gallery-item"><img src="img/400.jpg" alt="Satinada 400"><p>Ref: 400</p></div>
+            <div class="gallery-item"><img src="img/600.jpg" alt="Satinada 600"><p>Ref: 600</p></div>
+            <div class="gallery-item"><img src="img/716.jpg" alt="Satinada 716"><p>Ref: 716</p></div>
         </div>
         <p style="text-align:center;margin-top:24px;">
             <a href="https://github.com/EstebanAlvaro/Paperval/tree/main/img" target="_blank" rel="noopener">Ver todos los archivos en la carpeta img</a>
         </p>
     </section>
 
-    <!-- Fundas de 20 hojas -->
     <section class="catalogo hidden" id="fundas">
         <h2>Fundas de 20 hojas Mismo Diseño tamaño de cada hoja 60 cm por 70 cm <p>El precio de cada funda es de $ 535</p></h2>
         <div class="gallery">
             <div class="gallery-item"><img src="img/111.jpg" alt="Funda 1"><p>Ref: 111</p></div>
             <div class="gallery-item"><img src="img/112.jpg" alt="Funda 2"><p>Ref: 112</p></div>
+            <div class="gallery-item"><img src="img/114 - copia.jpg" alt="Funda 3"><p>Ref: 114</p></div>
+            <div class="gallery-item"><img src="img/116 - copia.jpg" alt="Funda 4"><p>Ref: 116</p></div>
+            <div class="gallery-item"><img src="img/119.jpg" alt="Funda 5"><p>Ref: 119</p></div>
             <!-- ... sigue con todas tus imágenes originales ... -->
         </div>
     </section>
 
-    <!-- Moñitas de Regalo -->
     <section class="catalogo hidden" id="monitas-regalo">
         <h2>Moñitas de Regalo</h2>
         <div class="gallery">
@@ -155,14 +206,12 @@
 
     <footer>
         <p>&copy; 2024 Paperval. Todos los derechos reservados.</p>
-        <!-- Puedes dejar tu contador externo aquí si quieres, pero el local ya se muestra arriba -->
     </footer>
 
     <script>
         function showSection(sectionId) {
-            const sections = document.querySelectorAll('.catalogo');
-            sections.forEach(section => section.classList.add('hidden'));
-
+            document.querySelectorAll('.catalogo').forEach(section => section.classList.add('hidden'));
+            document.querySelector('.hero').classList.add('hidden');
             const targetSection = document.getElementById(sectionId);
             if (targetSection) {
                 targetSection.classList.remove('hidden');
@@ -170,7 +219,10 @@
                 console.error(`No se encontró la sección con ID: ${sectionId}`);
             }
         }
-
+        function showHero() {
+            document.querySelectorAll('.catalogo').forEach(section => section.classList.add('hidden'));
+            document.querySelector('.hero').classList.remove('hidden');
+        }
         // Analítica local: visitas, tiempo, clicks, vistas
         (function() {
             // Contador de visitas por usuario (localStorage)
